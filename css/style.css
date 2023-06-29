@@ -49,6 +49,7 @@ body{
   padding: 16px 0;
   font-size: 1.125rem;
   position: relative;
+  font-family: 'Poppins';
 }
 
 .header .header-menu a::after{
@@ -131,6 +132,7 @@ body{
   font-size: 4rem;
   line-height: 1.125;
   margin-bottom: 32px;
+  font-family: 'Poppins';
 }
 
 .introducao-conteudo h1 span{
@@ -147,6 +149,7 @@ body{
   line-height: 1.5;
   color: #b2b2b2;
   margin-bottom: 20px;
+  font-family: 'Roboto';
 }
 
 .introducao a{
@@ -156,8 +159,9 @@ body{
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.10);
   color: #320;
   text-transform: uppercase;
-  font-weight: bold;
   font-size: 1.125rem;
+  font-family: 'Poppins';
+  font-weight: 600;
 }
 
 .introducao a:hover{
