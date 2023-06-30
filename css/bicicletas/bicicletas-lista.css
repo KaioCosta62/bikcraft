@@ -52,24 +52,15 @@
 
 @media(max-width: 800px){
   .bicicletas-lista{
-    padding: 60px 0 60px 0;
-  }
-
-  .bicicletas-lista-itens{
-    gap: 20px;
-  }
-}
-
-@media(max-width: 500px){
-  .bicicletas-lista{
     padding: 30px 0 30px 0;
-  }
-
-  .bicicletas-lista h2{
-    margin-bottom: 20px;
   }
 
   .bicicletas-lista h2{
     margin-bottom: 0;
   }
+  
+  .bicicletas-lista-itens{
+    gap: 20px;
+  }
+
 }
