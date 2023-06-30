@@ -19,6 +19,10 @@ img{
   display: block;
 }
 
+img[src$='.jpg']{
+  border-radius: 4px;
+}
+
 body{
   font-family: Arial, sans-serif;
   color: #111;
