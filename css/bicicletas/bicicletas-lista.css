@@ -3,7 +3,7 @@
 }
 
 .bicicletas-lista h2{
-  padding: 0 20px;
+  padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 40px;
@@ -12,7 +12,7 @@
 .bicicletas-lista-itens{
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 20px;
   display: flex;
   gap: 40px;
   overflow-x: auto;
@@ -60,5 +60,19 @@
 
   .bicicletas-lista-itens{
     gap: 20px;
+  }
+}
+
+@media(max-width: 500px){
+  .bicicletas-lista{
+    padding: 30px 0 30px 0;
+  }
+
+  .bicicletas-lista h2{
+    margin-bottom: 20px;
+  }
+  
+  .bicicletas-lista h2{
+    margin-bottom: 0;
   }
 }
