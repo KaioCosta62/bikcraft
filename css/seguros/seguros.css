@@ -73,7 +73,7 @@
   .seguros .seguros-item{
     grid-template-columns: 1fr;
     padding: 20px;
-    background-color: var(--cor-12);
+    background-color: var(--cor-11);
   }
 
   .seguros .seguros-item span{
