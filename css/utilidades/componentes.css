@@ -53,3 +53,20 @@
 .link:hover{
   color: var(--cor-0);
 }
+
+.titulo-bg{
+  background-color: var(--cor-11);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media(max-width: 800px){
+  .titulo-bg{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .titulo-bg span{
+    text-transform: lowercase;
+  }
+}
