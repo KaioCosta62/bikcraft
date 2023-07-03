@@ -48,6 +48,7 @@
   font: 600 4rem/1.125 'Poppins', sans-serif;
 }
 
+
 @media(max-width: 1200px){
   .font-1-xxl{
     font-size: 3.5rem;

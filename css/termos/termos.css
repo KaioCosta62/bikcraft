@@ -13,7 +13,8 @@
 }
 
 .termos-conteudo p{
-  margin-bottom: 16px;
+  margin-bottom: 24px;
+  max-width: 90ch;
 }
 
 @media(max-width: 800px){

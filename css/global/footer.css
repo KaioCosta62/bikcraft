@@ -62,8 +62,8 @@
 @media(max-width: 600px){
   .footer{
     grid-template-columns: 1fr;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
     gap: 60px;
   }
 
