@@ -33,6 +33,10 @@
   align-content: start;
 }
 
+#bicicleta .bicicleta-conteudo{
+  display: block;
+}
+
 .bicicletas h2,
 .bicicletas p{
   grid-column: 1 / -1;
