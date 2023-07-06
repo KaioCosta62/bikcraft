@@ -13,13 +13,13 @@
 
 .lojas .loja-item{
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.10);
-  padding: 16px;
   background-color: var(--cor-0);
 }
 
 .lojas .loja-conteudo{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 32px 16px;
   padding: 32px;
 }
 
@@ -41,6 +41,9 @@
 
 .lojas .loja-horario{
   grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .lojas .loja-dados{
@@ -53,8 +56,11 @@
 }
 
 .lojas .loja-horario{
-  display: flex;
-  gap: 8px;
+  padding-left: 12px;
+}
+
+.lojas .loja-horario img{
+  width: 20px;
 }
 
 @media(max-width: 800px){
@@ -69,7 +75,6 @@
     grid-column: 1 / -1;
     margin-bottom: 0px;
   }
-  
 }
 
 @media(max-width: 600px){
@@ -82,6 +87,6 @@
   .lojas .loja-conteudo{
     display: grid;
     grid-template-columns: 1fr;
-    padding: 30px 0;
+    padding: 16px;
   } 
 }
