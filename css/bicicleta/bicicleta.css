@@ -11,6 +11,10 @@
   text-transform: uppercase;
 }
 
+#bicicleta .bicicletas-lista{
+  padding: 60px 20px;
+}
+
 .bicicleta-comprar span{
   display: block;
 }
@@ -23,7 +27,7 @@
 
 .bicicleta .bicicleta-imagens img{
   flex: 1;
-  min-width: 200px;
+  min-width: 230px;
 }
 
 .bicicleta .bicicleta-imagens img:first-child{
@@ -37,12 +41,13 @@
 .bicicleta .bicicleta-comprar{
   display: grid;
   grid-template-columns: max-content auto;
+  align-items: center;
   gap: 12px;
   margin-bottom: 40px;
 }
 
 .bicicleta .bicicleta-comprar a{
-  grid-row: span 2;
+  grid-row: 1 / 3;
 }
 
 .bicicleta .bicicleta-comprar span{
@@ -91,10 +96,6 @@
 }
 
 @media(max-width: 800px){
-  #bicicleta .bicicletas-lista{
-    padding: 30px;
-  }
-
   #bicicleta .bicicletas-lista h2{
     margin-bottom: 40px;
   }
