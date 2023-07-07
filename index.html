@@ -8,14 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preload" href="/css/style.min.css" as="style">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Bikcraft - Bicicletas Elétricas</title>
   </head>
   <body>
    <header class="header-bg">
     <div class="container header">
       <a href="./">
-        <img src="img/bikcraft.svg" alt="Bikcraft">
+        <img src="img/bikcraft.svg" alt="Bikcraft" width="136" height="32">
       </a>
       <nav aria-label="principal">
         <ul class="header-menu cor-0 font-1-m">
@@ -42,9 +43,10 @@
         </p>
         <a href="bicicletas.html" class="botao">Selecione a sua</a>
       </div>
-      <div class="introducao-imagem">
-        <img src="img/fotos/introducao.jpg" alt="Bicicleta elétrica">
-      </div>
+      <picture>
+        <source media="(max-width: 800px)" srcset="img/bicicletas/nimbus.jpg">
+        <img src="img/fotos/introducao.jpg" alt="Bicicleta elétrica" width="1280" height="16000">
+      </picture>
     </div>
    </main>
 
@@ -53,7 +55,7 @@
     <ul class="bicicletas-lista-itens">
       <li>
         <a href="./bicicletas/magic.html">
-          <img src="./img/bicicletas/magic-home.jpg" alt="Bicicleta magic">
+          <img src="./img/bicicletas/magic-home.jpg" alt="Bicicleta magic" width="920" height="1040">
           <h3 class="font-1-xl">Magic Might</h3>
           <span class="font-2-m cor-8">R$ 2499</span>
         </a>
@@ -61,7 +63,7 @@
 
       <li>
         <a href="./bicicletas/nimbus.html">
-          <img src="./img/bicicletas/nimbus-home.jpg" alt="Bicicleta nimbus">
+          <img src="./img/bicicletas/nimbus-home.jpg" alt="Bicicleta nimbus" width="920" height="1040">
           <h3 class="font-1-xl">Nimbus Stark</h3>
           <span class="font-2-m cor-8">R$ 4999</span>
         </a>
@@ -69,7 +71,7 @@
 
       <li>
         <a href="./bicicletas/nebula.html">
-          <img src="./img/bicicletas/nebula-home.jpg" alt="Bicicleta nebula">
+          <img src="./img/bicicletas/nebula-home.jpg" alt="Bicicleta nebula" width="920" height="1040">
           <h3 class="font-1-xl">Nebula Cosmic</h3>
           <span class="font-2-m cor-8">R$ 3999</span>
         </a>
@@ -88,14 +90,14 @@
         <a href="./bicicletas/bicicletas.html" class="link">Escolha um modelo</a>
         <div class="tecnologia-vantagens">
           <div>
-            <img src="./img/icones/eletrica.svg" alt="">
+            <img src="./img/icones/eletrica.svg" alt="" width="24" height="24">
             <h3 class="cor-0  font-2-m">Motor Elétrico</h3>
             <p class="cor-5 font-2-s">
               Toda Bikcraft é equipada com um motor elétrico que possui duração de até 120h. A bateria é recarregada com a sua energia gasta ao pedalar.
             </p>
           </div>
           <div>
-            <img src="./img/icones/rastreador.svg" alt="">
+            <img src="./img/icones/rastreador.svg" alt=""  width="24" height="24">
             <h3 class="cor-0 font-2-m">Rastreador</h3>
             <p class="cor-5 font-2-s">
               Sabemos o quão preciosa é a sua Bikcraft, por isso adicionamos rastreadores e sistemas anti-furto para garantir o seu sossego.
@@ -104,7 +106,7 @@
         </div>
       </div>
       <div class="tecnologia-imagem">
-        <img src="./img/fotos/tecnologia.jpg" alt="Tecnologia Bikcraft">
+        <img src="./img/fotos/tecnologia.jpg" alt="Tecnologia Bikcraft" width="1200" height="1920">
       </div>
     </div>
    </article>
@@ -113,35 +115,35 @@
     <h2 class="container font-1-xxl cor-11">nossos parceiros<span class="cor-p1">.</span></h2>
     <ul class="parceiros-marca">
       <li>
-        <img src = "img/parceiros/caravan.svg" alt="Caravan">
+        <img src = "img/parceiros/caravan.svg" alt="Caravan" width="140" height="38">
       </li>
       <li>
-        <img src = "img/parceiros/ranek.svg" alt="Ranek">
+        <img src = "img/parceiros/ranek.svg" alt="Ranek" width="149" height="36">
       </li>
       <li>
-        <img src = "img/parceiros/handel.svg" alt="Handel">
+        <img src = "img/parceiros/handel.svg" alt="Handel" width="139" height="50">
       </li>
       <li>
-        <img src = "img/parceiros/dogs.svg" alt="Dogs">
+        <img src = "img/parceiros/dogs.svg" alt="Dogs" width="152" height="39">
       </li>
       <li>
-        <img src = "img/parceiros/lescone.svg" alt="Lescone">
+        <img src = "img/parceiros/lescone.svg" alt="Lescone" width="208" height="41">
       </li>
       <li>
-        <img src = "img/parceiros/flexblog.svg" alt="FlexBlog">
+        <img src = "img/parceiros/flexblog.svg" alt="FlexBlog" width="165" height="38">
       </li>
       <li>
-        <img src = "img/parceiros/wildbeast.svg" alt="Wildbeast">
+        <img src = "img/parceiros/wildbeast.svg" alt="Wildbeast" width="196" height="34">
       </li>
       <li>
-        <img src = "img/parceiros/surfbot.svg" alt="Surfbot">
+        <img src = "img/parceiros/surfbot.svg" alt="Surfbot" width="200" height="49">
       </li>
     </ul>
    </section>
 
    <section class="depoimentos" aria-label="Depoimentos">
       <div class="depoimentos-imagem">
-        <img src="./img/fotos/depoimento.jpg" alt="Imagem de nossa cliente em uma Bikcraft">
+        <img src="./img/fotos/depoimento.jpg" alt="Imagem de nossa cliente em uma Bikcraft" width="1560" height="1360">
       </div>
       <div class="depoimentos-conteudo">
         <blockquote>
@@ -187,7 +189,7 @@
 
    <footer class="footer-bg">
       <div class="footer container">
-        <img src="img/bikcraft.svg" alt="Bikcraft">
+        <img src="img/bikcraft.svg" alt="Bikcraft" width="136" height="32">
         <div class="footer-contato">
           <h3 class="font-2-l-b cor-0">Contato</h3>
           <ul class="font-2-m cor-5">
@@ -202,12 +204,12 @@
           </ul>
           <div class="redes-sociais">
             <a href="">
-              <img src="img/redes/instagram.svg" alt="Instagram">
+              <img src="img/redes/instagram.svg" alt="Instagram" width="32" height="32">
             </a>
             <a href="">
-              <img src="img/redes/facebook.svg" alt="Facebook">
+              <img src="img/redes/facebook.svg" alt="Facebook" width="32" height="32">
             </a> <a href="">
-              <img src="img/redes/youtube.svg" alt="Youtube">
+              <img src="img/redes/youtube.svg" alt="Youtube" width="32" height="32">
             </a>
           </div>
         </div>
