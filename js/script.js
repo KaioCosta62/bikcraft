@@ -31,7 +31,15 @@ parametros.forEach(ativarProduto)
 const perguntas = document.querySelectorAll('.perguntas button')
 
 function exibirResposta(event){
-  console.log(event.target)
+  const pergunta = event.currentTarget
+  const elemento = pergunta.getAttribute('aria-controls')
+  const resposta = document.getElementById(elemento)
+  
+  resposta.classList.toggle('ativa')
+  const verificaExpansao = resposta.classList.contains('ativa')
+  
+  pergunta.setAttribute('aria-expanded', verificaExpansao)
+
 }
 
 function ativarPergunta(pergunta){
