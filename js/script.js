@@ -62,7 +62,13 @@ function trocarImagem(event){
     imagensContainer.prepend(img)
   }
 }
+
 function ativarImagens(img){
   img.addEventListener('click', trocarImagem)
 }
+
 imagens.forEach(ativarImagens)
+
+if(window.SimpleAnime){
+  new SimpleAnime()
+}
