@@ -13,7 +13,6 @@ links.forEach(ativarLink)
 
 
 // Ativar itens do orcamento
-
 const parametros = new URLSearchParams(location.search)
 
 function ativarProduto(parametro){
@@ -24,3 +23,19 @@ function ativarProduto(parametro){
 
 }
 parametros.forEach(ativarProduto)
+
+
+
+// Perguntas frequentes
+
+const perguntas = document.querySelectorAll('.perguntas button')
+
+function exibirResposta(event){
+  console.log(event.target)
+}
+
+function ativarPergunta(pergunta){
+  pergunta.addEventListener('click',exibirResposta)
+}
+
+perguntas.forEach(ativarPergunta)
