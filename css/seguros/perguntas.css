@@ -56,13 +56,13 @@
 }
 
 
-.perguntas dl dd{
+.js .perguntas dl dd{
   max-width: 90ch;
   margin-left: 20px;
   display: none;
 }
 
-.perguntas dd.ativa{
+.js .perguntas dd.ativa{
   display: block;
 }
 
