@@ -37,7 +37,7 @@ function exibirResposta(event){
   
   resposta.classList.toggle('ativa')
   const verificaExpansao = resposta.classList.contains('ativa')
-  
+
   pergunta.setAttribute('aria-expanded', verificaExpansao)
 
 }
@@ -47,3 +47,22 @@ function ativarPergunta(pergunta){
 }
 
 perguntas.forEach(ativarPergunta)
+
+
+// Galeria IMG
+
+const imagens = document.querySelectorAll('.bicicleta-imagens img')
+const imagensContainer = document.querySelector('.bicicleta-imagens')
+
+function trocarImagem(event){
+  const larguraTela = matchMedia("(min-width: 1000px)").matches
+
+  if(larguraTela){
+    const img = event.currentTarget
+    imagensContainer.prepend(img)
+  }
+}
+function ativarImagens(img){
+  img.addEventListener('click', trocarImagem)
+}
+imagens.forEach(ativarImagens)
